@@ -4,6 +4,8 @@ window.addEventListener('load',()=>{
     let temperaturaValor = document.getElementById('tempValor')
     let TempDescripcion = document.getElementById('descripcion')
     let TempUbicacion = document.getElementById('ubicacion')
+    let velViento = document.getElementById('velocidadViento')
+    let dirViento = document.getElementById('direccionViento')
 
 
 
@@ -26,6 +28,11 @@ window.addEventListener('load',()=>{
                 TempDescripcion.textContent = desc
 
                 TempUbicacion.textContent = data.name 
+
+                velViento.textContent = data.wind.speed
+
+                dirViento.textContent = data.wind.direction 
+
 
                 let iconsCode = data.weather[0].icon;
                 const iconUrl = `https://openweathermap.org/img/wn/${iconsCode}.png`
