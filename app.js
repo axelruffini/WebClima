@@ -28,9 +28,9 @@ window.addEventListener('load', () => {
 
                     TempUbicacion.textContent = data.name;
                     
-                    hum.textContent = data.main.humidity;
+                    hum.textContent = `Humedad: ${data.main.humidity} %`;
 
-                    precip.textContent = data.main.precipitation;
+                    //precip.textContent = data.main.precipitation;
 
                     velViento.textContent = `${data.wind.speed} km/h`;
                     
