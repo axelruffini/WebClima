@@ -3,7 +3,11 @@ html {
 }
 
 body {
-    background: rgb(240, 240, 240);
+    background: rgb(107, 137, 255);
+    background-image: url(./uriel-xtgONQzGgOE-unsplash.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 main{
@@ -21,9 +25,10 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:white;
+    background: rgba(255, 255, 255, 0.516);
+    backdrop-filter: blur(50px);
     width: 450px;
-    height: 450px;
+    height: 40%;
     border-radius: 30px;
 }
 
